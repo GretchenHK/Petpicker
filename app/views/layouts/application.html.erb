@@ -22,22 +22,26 @@
       </button>
       <a class="navbar-brand" href="#">PetPicker</a>
     </div>
-
-    <!-- Collect the nav links, forms, and other content for toggling -->
+<!-- Collect the nav links, forms, and other content for toggling -->
     <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
-     
+     <ul class="nav navbar-nav">
+      <li>
+        <%= link_to new_pet_path do %>
+        Suggest a Pet
+      </li>
+      <% end %>
       
     </div><!-- /.navbar-collapse -->
   </div><!-- /.container-fluid -->
 </nav>
 <!--end navbar -->
 <div class="booyah-box col-xs-10 col-xs-offset-1 green">
-	<h1>Help us pick the perfect pet</h1>
-	<p>My kids have launched an intense begging campaign for a pet.</p>
-	<p>Suggest a pet and tell me why it's the perfect pet.</p>
+  <h1>Help us pick the perfect pet</h1>
+  <p>My kids have launched an intense begging campaign for a pet.</p>
+  <p>Suggest a pet and tell me why it's the perfect pet.</p>
 </div>
 <!--end navbar -->
 <%= yield %>
-	
+  
 </body>
 </html>
